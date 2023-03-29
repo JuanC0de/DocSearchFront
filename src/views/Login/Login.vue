@@ -1,11 +1,22 @@
-<script setup>
+<script>
 import FormLogin from '../../layouts/FormLogin/FormLogin.vue'
+import MenuComponent from '@/components/Menu.vue'
+
+export default {
+  name: "LoginForm",
+  /********* Componentes  ********/
+  components: {
+    FormLogin,
+    MenuComponent,
+  },
+};
 </script>
 
 <template>
     <div class="my-view">
-        <FormLogin/>
-    </div>   
+      <MenuComponent/>
+      <FormLogin/>
+    </div>
 </template>
 
 <style>

@@ -19,7 +19,8 @@ export default createVuetify({
         colors: {
           primary: '#1867C0',
           secondary: '#5CBBF6',
-          azulElCielo: '#1565C0'
+          azulElCielo: '#1565C0',
+          cyan_lighten: '#26C6DA'
         },
       },
     },
