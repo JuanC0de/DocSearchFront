@@ -9,7 +9,7 @@ export default {
             type: String,
             required: true
         },
-        image: {
+        imageAvatar: {
             type: String,
             required: true
         }
@@ -19,14 +19,7 @@ export default {
 <template>
 <v-card>
   <v-card-title class="align-center">
-    <v-avatar size="80" class="mx-auto">
-        <v-img
-          :src="image"
-          :alt="title"
-          width="100%"
-          height="auto"
-        />
-    </v-avatar>
+    <v-avatar :image="imageAvatar" size="80"></v-avatar>
   </v-card-title>
   <v-card-title>
     {{ title }}
