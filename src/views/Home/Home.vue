@@ -1,4 +1,5 @@
 <template>
+  <!--
   <v-card>
     <v-layout>
       <v-navigation-drawer
@@ -60,8 +61,59 @@
     </v-layout>
   </v-card>
   <br>
+-->
 
+<v-card
+    color="grey-lighten-1"
+    height="115px"
+    rounded="0"
+
+  >
+    <v-toolbar property>
+
+      <h2 class="bton">DocSearch</h2>
+
+      <v-btn icon="mdi-magnify" variant="tonal">
+      </v-btn>
+
+      <v-btn class="v-btn" variant="tonal">
+        <router-link to="Home2">Home</router-link>
+      </v-btn>
+
+      <v-btn class="v-btn" variant="tonal">
+        <router-link to="/AcercaDeNosotros">Acerca de Nosotros</router-link>
+      </v-btn>
+
+      <v-btn class="v-btn" variant="tonal">
+        <router-link to="/Support">Soporte</router-link>
+      </v-btn>
+
+      <v-btn class="v-btn" variant="tonal">
+        <router-link to="/">registrarse</router-link>
+      </v-btn>
+
+      <v-btn class="v-btn" variant="tonal">
+        <router-link to="/IniciarSesion">Iniciar Sesion</router-link>
+      </v-btn>
+    </v-toolbar>
+  </v-card>
 </template>
+
+<style>
+.v-btn {
+  margin: 20px;}
+
+h2 {
+  margin-right: 330px;
+  margin-left: 30px;}
+
+.v-main {
+        background-image: url('@/assets/images/FondHome.jpg');
+        background-size: cover;
+        background-position: relative;
+        min-height: 100vh;
+}
+</style>
 
 <script>
 
@@ -71,8 +123,12 @@ export default {
     msg: String
   },
   data: () => ({
-      
+
     }
 ),
 }
+
+
 </script>
+
+
