@@ -27,11 +27,11 @@ const routes = [
         name: 'Acerca De Nosotros',
         component: () => import('@/views/AboutUs/AboutUs.vue'),
   },
-  // {
-  //   path: '/Menu',
-  //   name: 'Menu',
-  //   component: () => import('@/components/Menu.vue'),
-  // },
+  {
+    path: '/Menu',
+    name: 'Menu',
+    component: () => import('@/components/Menu.vue'),
+  },
 ]
 
 const router = createRouter({

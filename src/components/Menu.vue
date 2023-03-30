@@ -6,10 +6,8 @@ export default {
   /********* Data Variables  ********/
   data: () => ({
       items: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' },
+        { title: 'Paciente' },
+        { title: 'Médico' },
       ],
     }),
 };
@@ -38,7 +36,7 @@ export default {
           color="cyan_lighten"
           v-bind="props"
         >
-          Activator slot
+          Registrese
         </v-btn>
       </template>
       <v-list>
@@ -52,10 +50,10 @@ export default {
       </v-list>
     </v-menu>
 
-
-    <v-btn icon>
-      <v-icon>mdi-export</v-icon>
+    <v-btn class="v-btn" variant="tonal">
+      <router-link to="Home2">Home</router-link>
     </v-btn>
+
     <v-btn icon>
       <v-icon>mdi-dots-vertical</v-icon>
     </v-btn>

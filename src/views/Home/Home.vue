@@ -96,7 +96,7 @@
         <router-link to="/IniciarSesion">Iniciar Sesion</router-link>
       </v-btn>
     </v-toolbar>
-  </v-card>
+</v-card>
 </template>
 
 <style>
